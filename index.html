@@ -16,24 +16,15 @@
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="nav">
       <img src="images/logo.svg" alt="logo" class="logo" />
-      <ul class="">
-        <li class="header-nav">Features</li>
-        <li class="header-nav">Team</li>
-        <li class="header-nav">Sign In</li>
+      <ul class="header-nav">
+        <li class="header-nav--item">Features</li>
+        <li class="header-nav--item">Team</li>
+        <li class="header-nav--item">Sign In</li>
       </ul>
     </nav>
     <div class="hero-container">
@@ -54,6 +45,11 @@
     </div>
     <div class="features-container">
       <div class="feature">
+        <img
+          src="images/icon-access-anywhere.svg"
+          alt=""
+          class="feature-icon"
+        />
         <h3 class="feature-title">Access your files, anywhere</h3>
         <p class="feature-content">
           The ability to use a smartphone, tablet, or computer to access your
@@ -61,6 +57,7 @@
         </p>
       </div>
       <div class="feature">
+        <img src="images/icon-security.svg" alt="" class="feature-icon" />
         <h3 class="feature-title">Security you can trust</h3>
         <p class="feature-content">
           2-factor authentication and user-controlled encryption are just a
@@ -68,6 +65,7 @@
         </p>
       </div>
       <div class="feature">
+        <img src="images/icon-collaboration.svg" alt="" class="feature-icon" />
         <h3 class="feature-title">Real-time collaboration</h3>
         <p class="feature-content">
           Securely share files and folders with friends, family and colleagues
@@ -75,6 +73,7 @@
         </p>
       </div>
       <div class="feature">
+        <img src="images/icon-any-file.svg" alt="" class="feature-icon" />
         <h3 class="feature-title">Store any type of file</h3>
         <p class="feature-content">
           Whether you're sharing holidays photos or work documents, Fylo has you
@@ -89,7 +88,7 @@
         alt="jumbo-image"
         class="jumbo-image"
       />
-      <h1 class="jumbo-title">Stay productive, wherever you are</h1>
+      <h3 class="jumbo-title">Stay productive, wherever you are</h3>
       <p class="jumbo-content">
         Never let location be an issue when accessing your files. Fylo has you
         covered for all of your file storage needs.
@@ -98,7 +97,10 @@
         Securely share files and folders with friends, family and colleagues for
         live collaboration. No email attachments required.
       </p>
-      <a href="#" class="jumbo-link">See how Fylo works</a>
+      <a href="#" class="jumbo-link"
+        >See how Fylo works
+        <img src="images/icon-arrow.svg" alt="" class="jumbo-arrow"
+      /></a>
     </div>
 
     <div class="testimonial-container">
@@ -110,7 +112,7 @@
         </p>
         <div class="testimonal-profile-container">
           <img
-            src=""
+            src="/images/profile-1.jpg"
             alt="testimonial-profile-picture"
             class="testimonial-profile-picture"
           />
@@ -126,7 +128,7 @@
         </p>
         <div class="testimonal-profile-container">
           <img
-            src=""
+            src="/images/profile-2.jpg"
             alt="testimonial-profile-picture"
             class="testimonial-profile-picture"
           />
@@ -142,7 +144,7 @@
         </p>
         <div class="testimonal-profile-container">
           <img
-            src=""
+            src="/images/profile-3.jpg"
             alt="testimonial-profile-picture"
             class="testimonial-profile-picture"
           />

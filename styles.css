@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: hsl(218, 28%, 13%);
+  min-height: 100vh;
+}
+
+@media (min-width: 25em) {
+  body {
+    background-image: url(images/bg-curvy-mobile.svg);
+  }
+}
+
+h1,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.logo {
+  height: 2em;
+  margin: 1.5em;
+}
+
+.nav {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: auto;
+  padding-right: 1em;
+}
+
+.header-nav--item {
+  padding: 0.5em;
+  display: inline;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    height: 2.5em;
+    margin: 2em;
+  }
+  .header-nav--item {
+    padding: 2em;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.hero-title {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+
+.hero-content {
+  margin-bottom: 1.5em;
+}
+
+.hero-button {
+  padding: 1em;
+  width: 80%;
+  background-color: hsl(176, 68%, 64%);
+  border-radius: 2em;
+}
+
+@media (min-width: 600px) {
+  .hero-button {
+    width: 15%;
+  }
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .features-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.feature {
+  margin: 2em 0;
+}
+
+.feature-icon {
+  padding: 2em;
+}
+
+.jumbo-container {
+  padding: 2em;
+}
+
+.jumbo-title {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.jumbo-content {
+  line-height: 1.7em;
+  margin: 1.5em 0;
+}
+
+.jumbo-link {
+  text-underline-offset: 0.5em;
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  padding: 3em;
+}
+
+.testimonial-box {
+  padding: 2em;
+  background-color: hsl(219, 30%, 18%);
+}
+
+.testimonial-content {
+  margin-bottom: 2em;
+}
+
+.testimonal-profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-profile-picture {
+  height: 4em;
+  border-radius: 50%;
+}
+
+.testimonal-profile-name {
+  font-size: 0.8em;
+}
+
+.testimonial-profile-position {
+  font-size: 0.8em;
+}
