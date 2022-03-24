@@ -154,6 +154,10 @@ h3 {
   padding: 3em;
 }
 
+.quotation {
+  transform: translateY(2em);
+}
+
 .testimonial-box {
   padding: 2em;
   background-color: hsl(219, 30%, 18%);
@@ -189,7 +193,9 @@ h3 {
   padding: 3em;
   margin: 0 2em;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 5px 5px 10px black;
+  transform: translateY(50%);
+  margin-top: -5em;
 }
 
 .cta-title {
@@ -217,6 +223,7 @@ h3 {
 }
 
 footer {
+  padding-top: 15em;
   background-color: hsl(216, 53%, 9%);
 }
 
@@ -224,7 +231,7 @@ footer {
   margin: 2em;
 }
 
-.footer-contact-container {
+.footer-content-container {
   padding: 2em;
 }
 
@@ -240,6 +247,16 @@ footer {
 .footer-socials-container {
   display: flex;
   justify-content: center;
+}
+
+.footer-contact-container {
+  display: flex;
+}
+
+.footer-contact-icon {
+  height: 1em;
+  width: 1em;
+  margin-right: 1em;
 }
 
 .socials-border-box {
