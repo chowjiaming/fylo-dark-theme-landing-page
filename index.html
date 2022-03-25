@@ -88,19 +88,21 @@
         alt="jumbo-image"
         class="jumbo-image"
       />
-      <h3 class="jumbo-title">Stay productive, wherever you are</h3>
-      <p class="jumbo-content">
-        Never let location be an issue when accessing your files. Fylo has you
-        covered for all of your file storage needs.
-      </p>
-      <p class="jumbo-content">
-        Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required.
-      </p>
-      <a href="#" class="jumbo-link"
-        >See how Fylo works
-        <img src="images/icon-arrow.svg" alt="" class="jumbo-arrow"
-      /></a>
+      <div class="jumbo-content-container">
+        <h3 class="jumbo-title">Stay productive, wherever you are</h3>
+        <p class="jumbo-content">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="jumbo-content">
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required.
+        </p>
+        <a href="#" class="jumbo-link"
+          >See how Fylo works
+          <img src="images/icon-arrow.svg" alt="" class="jumbo-arrow"
+        /></a>
+      </div>
     </div>
 
     <div class="testimonial-container">
@@ -168,40 +170,46 @@
         generous. If you have any questions, our support team would be happy to
         help you.
       </p>
-      <input type="text" class="cta-input" value="email@example.com" />
-      <div class="cta-button">Get Started For Free</div>
+      <div class="cta-contact-container">
+        <input type="text" class="cta-input" value="email@example.com" />
+        <div class="cta-button">Get Started For Free</div>
+      </div>
     </div>
 
     <footer>
       <div class="footer-container">
         <img src="images/logo.svg" alt="footer-logo" class="footer-logo" />
         <div class="footer-content-container">
-          <div class="footer-contact-container">
-            <img
-              src="images/icon-location.svg"
-              alt=""
-              class="footer-contact-icon"
-            />
-            <p class="location-content footer-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+          <div class="footer-location-content">
+            <div class="footer-contact-container">
+              <img
+                src="images/icon-location.svg"
+                alt=""
+                class="footer-contact-icon"
+              />
+              <p class="location-content footer-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
           </div>
-          <div class="footer-contact-container">
-            <img
-              src="images/icon-phone.svg"
-              alt=""
-              class="footer-contact-icon"
-            />
-            <p class="phone-number footer-content">+1-543-123-4567</p>
-          </div>
-          <div class="footer-contact-container">
-            <img
-              src="images/icon-email.svg"
-              alt=""
-              class="footer-contact-icon"
-            />
-            <p class="email footer-content">example@fylo.com</p>
+          <div class="footer-contact-content">
+            <div class="footer-contact-container">
+              <img
+                src="images/icon-phone.svg"
+                alt=""
+                class="footer-contact-icon"
+              />
+              <p class="phone-number footer-content">+1-543-123-4567</p>
+            </div>
+            <div class="footer-contact-container">
+              <img
+                src="images/icon-email.svg"
+                alt=""
+                class="footer-contact-icon"
+              />
+              <p class="email footer-content">example@fylo.com</p>
+            </div>
           </div>
         </div>
         <ul class="footer-nav-container">
@@ -215,18 +223,25 @@
           <li class="footer-nav-item footer-content">Terms</li>
           <li class="footer-nav-item footer-content">Privacy</li>
         </ul>
+        <div class="footer-socials-container">
+          <div class="socials-border-box">
+            <ion-icon
+              name="logo-facebook"
+              class="footer-social-icon"
+            ></ion-icon>
+          </div>
+          <div class="socials-border-box">
+            <ion-icon name="logo-twitter" class="footer-social-icon"></ion-icon>
+          </div>
+          <div class="socials-border-box">
+            <ion-icon
+              name="logo-instagram"
+              class="footer-social-icon"
+            ></ion-icon>
+          </div>
+        </div>
       </div>
-      <div class="footer-socials-container">
-        <div class="socials-border-box">
-          <ion-icon name="logo-facebook" class="footer-social-icon"></ion-icon>
-        </div>
-        <div class="socials-border-box">
-          <ion-icon name="logo-twitter" class="footer-social-icon"></ion-icon>
-        </div>
-        <div class="socials-border-box">
-          <ion-icon name="logo-instagram" class="footer-social-icon"></ion-icon>
-        </div>
-      </div>
+
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
