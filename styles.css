@@ -380,6 +380,9 @@ footer {
 }
 
 @media (min-width: 50em) {
+  footer {
+    padding: 15em 5em 0 5em;
+  }
   .footer-container {
     display: flex;
     justify-content: space-between;
