@@ -16,25 +16,22 @@
 }
 
 body {
-  background-image: url(images/bg-curvy-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: top 25em right 0;
-  background-size: contain;
   background-color: hsl(217, 28%, 15%);
-  min-height: 100vh;
   position: relative;
-}
-
-@media (min-width: 30em) {
-  body {
-    background-image: url(images/bg-curvy-desktop.svg);
-  }
 }
 
 h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
+}
+
+.header-container {
+  background-image: url(images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  min-height: 100vh;
 }
 
 .logo {
@@ -74,7 +71,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 auto 3em auto;
+  padding-top: 3em;
+  margin: 0 auto;
 }
 
 .hero-image {
@@ -116,6 +114,10 @@ h3 {
   }
 }
 
+.background-colour-container {
+  background-color: hsl(218, 28%, 13%);
+}
+
 .features-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -133,6 +135,7 @@ h3 {
 
 @media (min-width: 30em) {
   .features-container {
+    font-size: 1.2em;
     width: 60%;
     grid-template-columns: 1fr 1fr;
     gap: 20%;
@@ -143,8 +146,10 @@ h3 {
 
 .jumbo-container {
   padding: 2em;
+  margin-bottom: 5em;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .jumbo-image {
@@ -172,17 +177,17 @@ h3 {
     margin-top: 5em;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5em;
+    align-items: center;
+    font-size: 1.2em;
     padding: 5em;
+    margin: 5em auto;
+    max-width: 80em;
   }
   .jumbo-content-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 3em;
-  }
-  .jumbo-image {
-    max-width: 40em;
   }
   .jumbo-title {
     text-align: left;
@@ -196,6 +201,7 @@ h3 {
   grid-gap: 2em;
   padding: 3em;
   position: relative;
+  z-index: 1;
 }
 
 .quotation {
@@ -301,6 +307,7 @@ h3 {
     flex: 1;
   }
   .cta-input {
+    text-indent: 10px;
     padding: 1em;
     flex: 2;
   }
@@ -357,15 +364,22 @@ footer {
 @media (min-width: 30em) {
   .footer-container {
     display: flex;
+    justify-content: space-between;
+    padding: 6em 0;
+    max-width: 120em;
+    margin: 0 auto;
     position: relative;
   }
   .footer-logo {
     position: absolute;
-    transform: translateY(-5em);
+    top: 0;
+    left: 0;
+    margin: 0;
   }
   .footer-content-container {
     display: flex;
-    gap: 5em;
+    column-gap: 8em;
+    padding: 0;
   }
   .footer-location-content {
     flex: 1;
@@ -375,6 +389,11 @@ footer {
   }
   .footer-nav-container {
     padding: 0;
+  }
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 5em;
   }
 }
 
